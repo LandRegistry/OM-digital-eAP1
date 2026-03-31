@@ -9,34 +9,47 @@
 {% endblock %}
 
 {% block content %}
+
+
 <h2 class="govuk-heading-l">{{pageName}}</h2>
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
     <h2 class="govuk-summary-card__title">
-      1. Local authority and property postcode
+        1. Local authority and property postcode
     </h2>
   </div>
-  <div class="govuk-summary-card__content">
-    <dl class="govuk-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Local  authority serving  the property
-        </dt>
-        <dd class="govuk-summary-list__value">
-        Anytown Borough Council
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-       Full postcode of the property 
-        </dt>
-        <dd class="govuk-summary-list__value">
-         AT99 1AB
-        </dd>
-      </div>
-    </dl>
-  </div>
+  {% from "govuk/components/table/macro.njk" import govukTable %}
+
+   <div class="govuk-summary-card__content">
+
+{{ govukTable({
+
+  firstCellIsHeader: true,
+
+  rows: [
+
+    [
+      {
+        text: "Local authority serving the property",
+        classes: "govuk-!-width-one-third"
+      },
+      {
+        text: "Anytown Borough Council"
+      }
+    ],
+       [
+      {
+        text: "Full postcode of the property"
+      },
+      {
+        text: "AT99 1AB"
+      }
+    ]
+  ]
+}) }}
+</div>
+  
 </div>
 
 
@@ -59,14 +72,14 @@
         classes: "govuk-!-width-one-third"
     },
     {
-      text: "Title numbers"
+      text: "Title numbers",
+      classes: "govuk-!-width-two-thirds"
     }
   ],
   rows: [
     [
       {
-        text: "Charging order",
-          classes: "govuk-!-width-one-third"
+        text: "Charging order"
       },
       {
         text: "SY123456"
@@ -89,26 +102,7 @@
 
    <div class="govuk-summary-card__content">
 
-{{ govukTable({
-
-  firstCellIsHeader: false,
-  head: [
-    {
-      text: ""
-    },
-    {
-      text: ""
-    }
-  ],
-  rows: [
-    [
-      {
-        text: "The whole of the title"
-      }
-    ]
-
-  ]
-}) }}
+<p>The whole of the title</p>
 </div>
   
 </div>
@@ -192,10 +186,7 @@
       },
       {
         text: "60",
-        classes: "govuk-!-width-one-third"
-      },
-            {
-        text: ""
+        classes: "govuk-!-width-two-thirds"
       }
     ],
         [
@@ -259,7 +250,7 @@
   ]
 }) }}
 
-<p>The documents lodged with this application with a certification status of ‘Certified’ are listed and I certify they are true copies of the originals</p>
+<p class="govuk-!-width-two-thirds">The documents lodged with this application with a certification status of ‘Certified’ are listed and I certify they are true copies of the originals</p>
 </div>
   
 </div>
@@ -320,10 +311,12 @@
   rows: [
     [
       {
-        text: "Key number"
+        text: "Key number",
+        classes: "govuk-!-width-one-third"
       },
       {
-        text: "6"
+        text: "6",
+        classes: "govuk-!-width-two-thirds"
       }
     ],
     [
@@ -397,10 +390,12 @@
 
     [
       {
-        text: "Name"
+        text: "Name",
+        classes: "govuk-!-width-one-third"
       },
       {
-        text: "Bert Smith"
+        text: "Bert Smith",
+        classes: "govuk-!-width-two-thirds"
       }
     ],
        [
@@ -443,26 +438,7 @@
 
    <div class="govuk-summary-card__content">
 
-{{ govukTable({
-
-  firstCellIsHeader: false,
-  head: [
-    {
-      text: ""
-    },
-    {
-      text: ""
-    }
-  ],
-  rows: [
-    [
-      {
-        text: "The address of the property (where this is a single postal address)"
-      }
-    ]
-
-  ]
-}) }}
+<p>The address of the property (where this is a single postal address)</p>
 </div>
   
 </div>
@@ -485,10 +461,12 @@
 
     [
       {
-        text: "Name"
+        text: "Name",
+        classes: "govuk-!-width-one-third"
       },
       {
-        text: "Peachy Properties"
+        text: "Peachy Properties",
+        classes: "govuk-!-width-two-thirds"
       }
     ],
        [
@@ -523,26 +501,7 @@
 
    <div class="govuk-summary-card__content">
 
-{{ govukTable({
-
-  firstCellIsHeader: false,
-  head: [
-    {
-      text: ""
-    },
-    {
-      text: ""
-    }
-  ],
-  rows: [
-    [
-      {
-        text: "This application relates to a registrable disposition and disclosable overriding interests affect the registered estate"
-      }
-    ]
-
-  ]
-}) }}
+<p class="govuk-!-width-two-thirds">This application relates to a registrable disposition and disclosable overriding interests affect the registered estate.</p>
 </div>
   
 </div>
@@ -557,26 +516,7 @@
 
    <div class="govuk-summary-card__content">
 
-{{ govukTable({
-
-  firstCellIsHeader: false,
-  head: [
-    {
-      text: ""
-    },
-    {
-      text: ""
-    }
-  ],
-  rows: [
-    [
-      {
-        text: "I am a conveyancer, or acting on behalf of a conveyancer"
-      }
-    ]
-
-  ]
-}) }}
+<p>I am a conveyancer, or acting on behalf of a conveyancer</p>
 </div>
   
 </div>
@@ -764,11 +704,7 @@
       },
       {
         text: "Arnold Conveyancer",
-        classes: "govuk-!-width-one-third"
-      },
-                 {
-        text: " ",
-        classes: "govuk-!-width-one-third"
+        classes: "govuk-!-width-two-thirds"
       }
     ],
        [
