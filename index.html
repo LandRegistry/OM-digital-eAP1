@@ -9,7 +9,7 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
+<p>Digital replacement of the eAP1 form</p>
 
 <div class="govuk-!-padding-right-3">
 
@@ -18,7 +18,7 @@
 
 
 
-     <div class="govuk-grid-column-one-half">
+  <div class="govuk-grid-column-two-thirds">
 
 
 {% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
@@ -52,7 +52,7 @@
       actions: {
         items: [
           {
-            href: "/order-summary/order-summary-2",
+            href: "/digital-eAP1/order-summary-2",
             text: "Version-2",
             visuallyHiddenText: "Version 2"
           }
@@ -67,39 +67,7 @@
  
 </div>
 
-  <div class="govuk-grid-column-one-half">
-
-
-{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
-
-{{ govukSummaryList({
-  card: {
-    title: {
-      text: "TBD"
-    }
-  },
-  rows: [
-    {
-      key: {
-        text: "TBD"
-      },
-      actions: {
-        items: [
-          {
-            href: "#",
-            text: "#",
-            visuallyHiddenText: "#"
-          }
-        ]
-      }
-      
-    }
-  ]
-}) }}
-
-
- 
-  </div>
+  
 </div>
 </div>
 
