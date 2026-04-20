@@ -1,0 +1,78 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Order Summary" %}
+
+{% block content %}
+
+<h2 class="govuk-heading-l">{{pageName}}</h2>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+<p>Digital replacement of the eAP1 form</p>
+
+<div class="govuk-!-padding-right-3">
+
+</div>
+        </div>
+
+
+
+  <div class="govuk-grid-column-two-thirds">
+
+
+{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
+
+{{ govukSummaryList({
+  card: {
+    title: {
+      text: "Order Summary"
+    }
+  },
+  rows: [
+    {
+      key: {
+        text: "Table version in summary cards"
+      },
+      actions: {
+        items: [
+          {
+            href: "/order-summary-1",
+            text: "Version-1",
+            visuallyHiddenText: "Version 1"
+          }
+        ]
+      }
+      
+    },
+    {
+      key: {
+        text: "Pure Summary version"
+      },
+      actions: {
+        items: [
+          {
+            href: "/order-summary-2",
+            text: "Version-2",
+            visuallyHiddenText: "Version 2"
+          }
+        ]
+      }
+      
+    }
+  ]
+}) }}
+
+
+ 
+</div>
+
+  
+</div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+  </div>
+</div>
+{% endblock %}
