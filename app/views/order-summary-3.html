@@ -107,232 +107,94 @@
   
 </div>
 
-<!--div class="govuk-summary-card">
+<div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
     <h2 class="govuk-summary-card__title">
-      4-a. Application, priority and fees
+      4. Application, priority and fees
     </h2>
   </div>
 
-    {% from "govuk/components/table/macro.njk" import govukTable %}
-
-   <div class="govuk-summary-card__content">
- {{ govukTable({
-  firstCellIsHeader: false,
-  head: [
-    {
-      text: "Application priority",
-      classes: "govuk-!-width-one-third"
-    },
-    {
-      text: "Price paid/Value(£)",
-      classes: "govuk-!-width-one-third"
-    },
-    {
-      text: "Fees  (£)",
-      classes: "govuk-!-width-one-third"
-    }
-  ],
-  rows: [
-    [
-      {
-        text: "Charging order"
-      },
-      {
-        text: "Not provided"
-      },
-      {
-        text: "20"
-      }
-    ],
-    [
-    {
-        text: "Charging"
-      },
-      {
-        text: "Not provided"
-      },
-      {
-        text: "20"
-      }
-    ],
-        [
-    {
-        text: "Charging order"
-      },
-      {
-        text: "Not provided"
-      },
-      {
-        text: "20"
-      }
-    ]
-
-  ]
-}) }}
-
-
+   {% from "govuk/components/table/macro.njk" import govukTable %}
+     <div class="govuk-summary-card__content">
 <table class="govuk-table">
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header">Application priority</th>
-      <th scope="col" class="govuk-table__header">Price paid/Value(£)</th>
-      <th scope="col" class="govuk-table__header">	Fees (£)</th>
-    </tr>
-  </thead>
+
+
   <tbody class="govuk-table__body">
-    <tr class="govuk-table__row" style="padding-top: 40px;">
-      <td class="govuk-table__cell" style="padding-top: 40px;">Charging order</td>
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Application priority</th>
+      <td class="govuk-table__cell">Charging order</td>
+      <td class="govuk-table__cell">&nbsp;</td>
+       
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Price paid/Value(£)</th>
       <td class="govuk-table__cell">Not provided</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Fees (£)</th>
       <td class="govuk-table__cell">20</td>
     </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Next 33 weeks</th>
-      <td class="govuk-table__cell">£109.80 per week</td>
+        <td class="govuk-table__cell">&nbsp;</td>
+          <td class="govuk-table__cell">&nbsp;</td>
+            <td class="govuk-table__cell">&nbsp;</td>
     </tr>
     <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Total estimated pay</th>
-      <td class="govuk-table__cell">£4,282.20</td>
+      <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Application priority</th>
+      <td class="govuk-table__cell">Charging order</td>
+      <td class="govuk-table__cell">&nbsp;</td>
+       
     </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Price paid/Value(£)</th>
+      <td class="govuk-table__cell">Not provided</td>
+    </tr>
+    
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Fees (£)</th>
+      <td class="govuk-table__cell">20</td>
+        </tr>
+        <td class="govuk-table__cell">&nbsp;</td>
+          <td class="govuk-table__cell">&nbsp;</td>
+            <td class="govuk-table__cell">&nbsp;</td>
+    </tr>
+       <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Application priority</th>
+      <td class="govuk-table__cell">Charging order</td>
+      <td class="govuk-table__cell">&nbsp;</td>
+       
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Price paid/Value(£)</th>
+      <td class="govuk-table__cell">Not provided</td>
+    </tr>
+    
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Fees (£)</th>
+      <td class="govuk-table__cell">20</td>
+        </tr>
+        <td class="govuk-table__cell">&nbsp;</td>
+          <td class="govuk-table__cell">&nbsp;</td>
+            <td class="govuk-table__cell">&nbsp;</td>
+        <tr class="govuk-table__row">
+      
+          <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Total Fees (£)</th>
+      <td class="govuk-table__cell">60</td>
+      <td class="govuk-table__cell">&nbsp;</td>
+       
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Fee payment method</th>
+      <td class="govuk-table__cell">Direct Debit</td>
+    </tr>
+      
   </tbody>
 </table>
-    {% from "govuk/components/table/macro.njk" import govukTable %}
-
-   <div class="govuk-summary-card__content">
- {{ govukTable({
-  firstCellIsHeader: false,
-
-  rows: [
-   
-    [
-    {
-        text: "Total Fees (£)",
-        classes: "govuk-!-width-one-third"
-      },
-      {
-        text: "60",
-        classes: "govuk-!-width-two-thirds"
-      }
-    ],
-        [
-    {
-        text: "Fee payment method"
-      },
-      {
-        text: "Direct Debit"
-      },
-      {
-        text: ""
-      }
-    ]
-  ]
-}) }}
 </div>
 </div>
-</div -->
 
 
-{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
 
-{{ govukSummaryList({
-  card: {
-    title: {
-      text: "  4. Application, priority and fees"
-    }
-  },
 
-  rows: [
-
-    {
-      key: {
-        text: "Application priority"
-              },
-      value: {
-        text: "Charging order"
-      }
-    },
-    {
-      key: {
-        text: "Price paid/Value(£)"
-      },
-      value: {
-        text: "Not provided"
-      }
-    },
-    {
-      key: {
-        text: "	Fees (£)"
-      },
-      value: {
-        html: "20"
-      }
-    },
-    {
-      key: {
-        text: "Application priority"
-              },
-      value: {
-        text: "Charging order"
-      }
-    },
-    {
-      key: {
-        text: "Price paid/Value(£)"
-      },
-      value: {
-        text: "Not provided"
-      }
-    },
-    {
-      key: {
-        text: "	Fees (£)"
-      },
-      value: {
-        text:"20"
-      }
-    },
-            {
-      key: {
-        text: "Application priority"
-      },
-      value: {
-        text:"Charging order"
-      }
-    },
-        {
-      key: {
-        text: "Price paid/Value(£)"
-      },
-      value: {
-        text: "Not provided"
-      }
-    },
-    {
-      key: {
-        text: "	Fees (£)"
-      },
-      value: {
-        text: "20"
-      }
-    },
-    {
-      key: {
-        text: "Total Fees (£)"
-              },
-      value: {
-        text: "60"
-      }
-    },
-    {
-      key: {
-        text: "Fee payment method"
-      },
-      value: {
-        text: "Direct Debit"
-          }
-      }
-  ]
-}) }}
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
