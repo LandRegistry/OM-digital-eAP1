@@ -9,15 +9,35 @@
 {% endblock %}
 
 {% block content %}
+    <style>
+.sidebar {
+    position: fixed;
+    margin-left: 20px;
+    margin-bottom: 1000px;
+    top: 160px;
+    width: 300px;
+    display: block;
+    padding: 15px;
+    background: #ffffff;
+   
+}
+    </style>
+    <div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
 
 
 <h2 class="govuk-heading-l">{{pageName}}</h2>
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+          <div id="1">
     <h2 class="govuk-summary-card__title">
         1. Local authority and property postcode
     </h2>
+          </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -55,9 +75,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+          <div id="2">
     <h2 class="govuk-summary-card__title">
       2. Title numbers
     </h2>
+          </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -94,9 +116,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+     <div id="3">
     <h2 class="govuk-summary-card__title">
       3. The application affects
     </h2>
+     </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -109,9 +133,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+     <div id="4">
     <h2 class="govuk-summary-card__title">
       4. Application, priority and fees
     </h2>
+     </div>
   </div>
 
    {% from "govuk/components/table/macro.njk" import govukTable %}
@@ -198,9 +224,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+     <div id="5">
     <h2 class="govuk-summary-card__title">
       5. Documents lodged with this form
     </h2>
+     </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -248,9 +276,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+     <div id="6">
     <h2 class="govuk-summary-card__title">
       6. The applicant
     </h2>
+     </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -287,9 +317,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+     <div id="7">
     <h2 class="govuk-summary-card__title">
       7. The application is sent to HM Land Registry by
     </h2>
+     </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -348,6 +380,14 @@
       {
         text: "07722-123456"
       }
+    ],
+    [
+      {
+        text: "Fax"
+      },
+      {
+        text: "Not provided"
+      }
     ]
   ]
 }) }}
@@ -357,9 +397,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+     <div id="8">
     <h2 class="govuk-summary-card__title">
       8. Third party notification
     </h2>
+    </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -413,9 +455,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+     <div id="9">
     <h2 class="govuk-summary-card__title">
       9. The address for service for each proprietor of the registered estates to be entered in the register is
     </h2>
+     </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -428,9 +472,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+     <div id="10">
     <h2 class="govuk-summary-card__title">
       10. Names and addresses for services of the proprietor of any new charge to be entered in the register
     </h2>
+     </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -476,9 +522,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+     <div id="11">
     <h2 class="govuk-summary-card__title">
       11.  Disclosable overriding interests
     </h2>
+    </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -491,9 +539,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+     <div id="12">
     <h2 class="govuk-summary-card__title">
       12.  Confirmation of identity
     </h2>
+     </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -506,9 +556,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+     <div id="13">
     <h2 class="govuk-summary-card__title">
       13. Where the application is sent to HM Land Registry by a conveyancer
     </h2>
+    </div>
   </div>
 
     {% from "govuk/components/table/macro.njk" import govukTable %}
@@ -596,9 +648,11 @@
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
+          <div id="14">
     <h2 class="govuk-summary-card__title">
       14. Where the application is sent to Land Registry by someone who is not a  conveyancer
     </h2>
+          </div>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -664,10 +718,12 @@
   
 </div>
 
-<div class="govuk-summary-card">
+<div class="govuk-summary-card" style="margin-bottom: 120px">
   <div class="govuk-summary-card__title-wrapper">
     <h2 class="govuk-summary-card__title">
+      <div id="15">
       15. I confirm I have read and understood the warning statement connected with this application
+      </div>
     </h2>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
@@ -703,5 +759,65 @@
 </div>
   
 </div>
+</div>
+  <div class="govuk-grid-column-one-third">
+        <div class="sidebar">
+            
+          <ul class="govuk-list">
+  <li>
+              <a href="#1" class="govuk-body-s">1. Local authority and property postcode</a>
+                </li>
+  <li>
+              <a href="#2" class="govuk-body-s">2. Title numbers</a>
+                </li>
+  <li>
+            <a href="#3" class="govuk-body-s">3. The application affects</a>
+            </li>
+  <li>
+          <a href="#4" class="govuk-body-s">4. Application, priority and fees</a>
+          </li>
+  <li>
+           <a href="#5" class="govuk-body-s">5. Documents lodged with this form</a>
+           </li>
+  <li>
+           <a href="#6" class="govuk-body-s">6. The applicant</a>
+           </li>
+  <li>
+           <a href="#7" class="govuk-body-s">7. The application is sent by</a></li>
+  <li>
+
+           <a href="#8" class="govuk-body-s">8. Third party notification</a></li>
+  <li>
+
+           <a href="#9" class="govuk-body-s">9. The address for service for each proprietor of the registered estates</a>
+           </li>
+  <li>
+           <a href="#10" class="govuk-body-s">10. Names and addresses for services of the proprietor of any new charge</a>
+           </li>
+  <li>
+           <a href="#11" class="govuk-body-s">11. Disclosable overriding interests</a>
+           </li>
+  <li>
+           <a href="#12" class="govuk-body-s">12. Confirmation of identity</a>
+           </li>
+  <li>
+            <a href="#13" class="govuk-body-s">13. The application is sent by a conveyancer</a>
+            </li>
+  <li>
+            <a href="#14" class="govuk-body-s">14. The application is sent by someone who is not a conveyancer</a>
+            </li>
+  <li>
+           <a href="#14" class="govuk-body-s">15. I confirm I have read and understood the warning statement</a>
+           </li>
+           </ul>
+                 </main>
+</div>
+       
+     
+    </div>
+  </div>
+    </div>
+
+
 
 {% endblock %}

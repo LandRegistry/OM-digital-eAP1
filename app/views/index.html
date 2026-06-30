@@ -7,9 +7,9 @@
 <h2 class="govuk-heading-l">{{pageName}}</h2>
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
 
-<p>Digital replacement of the eAP1 form</p>
+<h4 class="govuk-heading-m">Digital replacement of the eAP1 form</h4>
 
 <div class="govuk-!-padding-right-3">
 
@@ -17,8 +17,15 @@
         </div>
 
 
+<!--
 
-  <div class="govuk-grid-column-two-thirds">
+https://om-digital-eap1-5738e943d9ce.herokuapp.com/order-summary-1
+ 
+p/w om-eap1
+
+-->
+
+  <div class="govuk-grid-column-full">
 
 
 {% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
@@ -32,7 +39,7 @@
   rows: [
    {
       key: {
-        text: "Includes one third right hand panel with anchor links to each panel"
+        text: "Panel 1 removed. Fax option from panel 7 removed. Changed content in panel 8. 30/06/26"
       },
       actions: {
         items: [
@@ -40,6 +47,36 @@
             href: "/order-summary-4",
             text: "Version-4",
             visuallyHiddenText: "Version 4"
+          }
+        ]
+      }
+      
+    },
+            {
+      key: {
+        text: "Revised Panel 4 with additional spacing for readability 15/06/26"
+      },
+      actions: {
+        items: [
+          {
+            href: "/order-summary-3",
+            text: "Version-3",
+            visuallyHiddenText: "Version 3"
+          }
+        ]
+      }
+      
+    },
+        {
+      key: {
+        text: "Post UR with accessibility amendment in Panel 4"
+      },
+      actions: {
+        items: [
+          {
+            href: "/order-summary-2",
+            text: "Version-2",
+            visuallyHiddenText: "Version 2"
           }
         ]
       }
@@ -55,36 +92,6 @@
             href: "/order-summary-1",
             text: "Version-1",
             visuallyHiddenText: "Version 1"
-          }
-        ]
-      }
-      
-    },
-    {
-      key: {
-        text: "Post UR with accessibility amendment in Panel 4"
-      },
-      actions: {
-        items: [
-          {
-            href: "/order-summary-2",
-            text: "Version-2",
-            visuallyHiddenText: "Version 2"
-          }
-        ]
-      }
-      
-    },
-        {
-      key: {
-        text: "Revised Panel 4 with additional spacing for readability 15/06/26"
-      },
-      actions: {
-        items: [
-          {
-            href: "/order-summary-3",
-            text: "Version-3",
-            visuallyHiddenText: "Version 3"
           }
         ]
       }
