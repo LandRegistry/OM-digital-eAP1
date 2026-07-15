@@ -456,92 +456,101 @@
   
 </div>
 
+
+
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
     <h2 class="govuk-summary-card__title">
-      13. Where the application is sent to HM Land Registry by a conveyancer
+     13. Where the application is sent to HM Land Registry by a conveyancer
     </h2>
   </div>
 
-    {% from "govuk/components/table/macro.njk" import govukTable %}
+   {% from "govuk/components/table/macro.njk" import govukTable %}
+     <div class="govuk-summary-card__content">
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--s">Details of party representation
+</caption>
 
-   <div class="govuk-summary-card__content">
- {{ govukTable({
-    caption: "Details of party representation",
-  captionClasses: "govuk-table__caption--s",
-  firstCellIsHeader: false,
 
-  head: [
-    {
-      text: "Role",
-      classes: "govuk-!-width-one-third"
-    },
-    {
-      text: "Name",
-      classes: "govuk-!-width-one-third"
-    },
-    {
-      text: "Represented by",
-      classes: "govuk-!-width-one-third"
-    }
-  ],
-  rows: [
-    [
-      {
-        text: "Power of Attorney"
-      },
-      {
-        text: "Claire-Louise Brenland"
-      },
-      {
-        text: "Gowling WLG (UK) LLP
-              Two Snowhill
-              Birmingham
-              B4 6WR.
-              Reference:
-              SHO/2771525/JXKVAXJ09"
-      }
-    ],
-    [
-    {
-        text: "Lender"
-      },
-      {
-        text: "TSB Bank PLC"
-      },
-      {
-        text: "Lodging conveyancer"
-      }
-    ],
-        [
-    {
-        text: "Lessee Borrower"
-      },
-      {
-        text: "Siobhan Mullan"
-      },
-      {
-        text: "Lodging conveyancer"
-      }
-    ],
-        [
-    {
-        text: "Lessor"
-      },
-      {
-        text: "London & Quadrant Housing Trust"
-      },
-      {
-        text: "Gowling WLG (UK) LLP
-  Two Snowhill
-  Birmingham
-  B4 6WR
-  Reference:
-  SHO/2771525/JXKVAXJ09"
-      }
-    ]
-  ]
-}) }}
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row" class="govuk-!-width-one-third">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Role</th>
+      <td class="govuk-table__cell govuk-!-width-one-third">Power of Attorney</td>
+      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Name</th>
+      <td class="govuk-table__cell">Claire-Louise Brenland</td>
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Represented by</th>
+      <td class="govuk-table__cell govuk-!-width-one-third">Gowling WLG (UK) LLP Two Snowhill Birmingham B4 6WR. Reference: SHO/2771525/JXKVAXJ09</td>
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+        <tr class="govuk-table__row">
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+        <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+       <tr class="govuk-table__row" class="govuk-!-width-one-third">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Role</th>
+      <td class="govuk-table__cell govuk-!-width-one-third">Lender</td>
+      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Name</th>
+      <td class="govuk-table__cell">TSB Bank PLC/td>
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Represented by</th>
+      <td class="govuk-table__cell govuk-!-width-one-third">Lodging conveyancer</td>
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+        <tr class="govuk-table__row">
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+        <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+           <tr class="govuk-table__row" class="govuk-!-width-one-third">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Role</th>
+      <td class="govuk-table__cell govuk-!-width-one-third">Lessee Borrower</td>
+      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Name</th>
+      <td class="govuk-table__cell">Siobhan Mullan</td>
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Represented by</th>
+      <td class="govuk-table__cell govuk-!-width-one-third">Lodging conveyancer</td>
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+        <tr class="govuk-table__row">
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+        <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+    <tr class="govuk-table__row" class="govuk-!-width-one-third">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Role</th>
+      <td class="govuk-table__cell govuk-!-width-one-third">Lessor</td>
+      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Name</th>
+      <td class="govuk-table__cell">London & Quadrant Housing Trust</td>
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Represented by</th>
+      <td class="govuk-table__cell govuk-!-width-one-third">Gowling WLG (UK) LLP Two Snowhill Birmingham B4 6WR. Reference: SHO/2771525/JXKVAXJ09</td>
+       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+    </tr>
+ 
+  </tbody>
+</table>
 </div>
 </div>
 
