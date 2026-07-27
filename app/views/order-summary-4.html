@@ -107,7 +107,7 @@
 
    <div class="govuk-summary-card__content">
 
-<p>The whole of the title</p>
+<p>The whole of all titles</p>
 </div>
   
 </div>
@@ -115,7 +115,7 @@
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
     <h2 class="govuk-summary-card__title">
-      4. Application, priority and fees
+      4. Application, priority and  in order of priority
     </h2>
   </div>
 
@@ -137,8 +137,8 @@
       <td class="govuk-table__cell">&nbsp;</td>
     </tr>
     <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Fees (£)</th>
-      <td style="padding:10px 0px 0px 0px" >20</td>
+      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Fees</th>
+      <td style="padding:10px 0px 0px 0px" >£20</td>
     </tr> 
      <tr class="govuk-table__row">
         <td class="govuk-table__cell">&nbsp;</td>
@@ -160,8 +160,8 @@
     
     
  <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Fees (£)</th>
-      <td style="padding:10px 0px 0px 0px" >20</td>
+      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Fees</th>
+      <td style="padding:10px 0px 0px 0px" >£20</td>
     </tr> 
              <tr class="govuk-table__row">
         <td class="govuk-table__cell">&nbsp;</td>
@@ -181,8 +181,8 @@
     </tr>
     
  <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Fees (£)</th>
-      <td style="padding:10px 0px 0px 0px" >20</td>
+      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Fees</th>
+      <td style="padding:10px 0px 0px 0px" >£20</td>
     </tr> 
              <tr class="govuk-table__row">
         <td class="govuk-table__cell">&nbsp;</td>
@@ -190,8 +190,8 @@
             <td class="govuk-table__cell">&nbsp;</td>
         <tr class="govuk-table__row">
       
-          <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Total Fees (£)</th>
-      <td class="govuk-table__cell">60</td>
+          <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Total Fees</th>
+      <td class="govuk-table__cell">£60</td>
       <td class="govuk-table__cell">&nbsp;</td>
        
     </tr>
@@ -229,7 +229,7 @@
         classes: "govuk-!-width-one-third"
     },
     {
-      text: "Certified copy statement"
+      text: "Certified statement"
     }
   ],
   rows: [
@@ -456,7 +456,7 @@
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
     <h2 class="govuk-summary-card__title">
-     13. Where the application is sent to HM Land Registry by a conveyancer
+     13. Party representation and evidence of identity
     </h2>
   </div>
 
@@ -495,7 +495,7 @@
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Name</th>
-      <td class="govuk-table__cell">TSB Bank PLC/td>
+      <td class="govuk-table__cell">TSB Bank PLC</td>
        <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
     </tr>
     <tr class="govuk-table__row"  >
@@ -607,6 +607,8 @@
     <h2 class="govuk-summary-card__title">
       15. I confirm I have read and understood the warning statement connected with this application
     </h2>
+
+
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
@@ -638,6 +640,19 @@
     ]
   ]
 }) }}
+<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Review warning statement
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    WARNING</br>
+If you dishonestly enter information or make a statement that you know is, or might be, untrue or misleading, and intend by doing so to make a gain for yourself or another person, or to cause loss or the risk of loss to another person, you may commit the offence of fraud under section 1 of the Fraud Act 2006, the maximum penalty for which is 10 years’ imprisonment or an unlimited fine, or both.
+Failure to complete this form with proper care may result in a loss of protection under the Land Registration Act 2002 if, as a result, a mistake is made in the register.
+Under section 66 of the Land Registration Act 2002 most documents (including this form) kept by the registrar relating to an application to the registrar or referred to in the register are open to public inspection and copying.  If you believe a document contains prejudicial information, you may apply for that part of the document to be made exempt using Form EX1, under rule 136 of the Land Registration Rules 2003.
+  </div>
+</details>
 </div>
   
 </div>
