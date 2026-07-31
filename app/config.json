@@ -1,5 +1,5 @@
 {
-  "serviceName": "Land Registry",
+  "serviceName": "HM Land Registry",
   "useServiceNavigation": true,
   "plugins": {
     "govuk-frontend": {
