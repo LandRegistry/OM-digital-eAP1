@@ -1,15 +1,12 @@
-{% extends "layouts/main.html" %}
-
-
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
 
 {% set pageName = "e-AP1" %}
 
 {% block pageTitle %}
-{{ pageName}} – {{ serviceName }} – GOV.UK Prototype Kit
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block content %}
-
 
 <h2 class="govuk-heading-l">{{pageName}}</h2>
 
@@ -78,7 +75,7 @@
     </tr>  
       <tr class="govuk-table__row">
       <th scope="row" align="left" style="padding:10px 0px 0px 0px">Title number</th>
-      <td style="padding:10px 0px 0px 0px" >AY234567</td>
+      <td style="padding:10px 0px 0px 0px" >SY123456</td>
     </tr>
          <tr class="govuk-table__row">
         <td class="govuk-table__cell">&nbsp;</td>
@@ -95,7 +92,7 @@
            <tr class="govuk-table__row">
       
           <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Title number</th>
-      <td class="govuk-table__cell">AB345678</td>
+      <td class="govuk-table__cell">SY123456</td>
       <td class="govuk-table__cell">&nbsp;</td>
        
     </tr>
@@ -161,7 +158,7 @@
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Price paid / Value</th>
-      <td class="govuk-table__cell">Zero</td>
+      <td class="govuk-table__cell">£0</td>
       <td class="govuk-table__cell">&nbsp;</td>
       
     </tr>
@@ -169,7 +166,7 @@
     
  <tr class="govuk-table__row">
       <th scope="row" align="left" style="padding:10px 0px 0px 0px">Fee</th>
-      <td style="padding:10px 0px 0px 0px" >Zero</td>
+      <td style="padding:10px 0px 0px 0px" >£0</td>
     </tr> 
              <tr class="govuk-table__row">
         <td class="govuk-table__cell">&nbsp;</td>
@@ -184,13 +181,13 @@
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Price paid / Value</th>
-      <td class="govuk-table__cell">Zero</td>
+      <td class="govuk-table__cell">£0</td>
       <td class="govuk-table__cell">&nbsp;</td>
     </tr>
     
  <tr class="govuk-table__row">
       <th scope="row" align="left" style="padding:10px 0px 0px 0px">Fee</th>
-      <td style="padding:10px 0px 0px 0px" >Zero</td>
+      <td style="padding:10px 0px 0px 0px" >£0</td>
     </tr> 
              <tr class="govuk-table__row">
         <td class="govuk-table__cell">&nbsp;</td>
@@ -304,7 +301,7 @@
       <td class="govuk-table__cell govuk-!-width-one-third">Private individual</td>      
     </tr>
         <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Application details</th>
+      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Applicant details</th>
       <td style="padding:10px 0px 0px 0px" >Janet Smith</td>
     </tr>
          <tr class="govuk-table__row">
@@ -319,7 +316,7 @@
     </tr>
 
             <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Application details</th>
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Applicant details</th>
       <td class="govuk-table__cell govuk-!-width-one-third">Joseph Smith</td>
 
     </tr>
@@ -398,7 +395,7 @@
 
    <div class="govuk-summary-card__content">
 
-<p>Not applicable</p>
+<p>They are to hold the property on trust for themselves as joint tenants</p>
 </div>
   
 </div>
@@ -406,7 +403,7 @@
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
     <h2 class="govuk-summary-card__title">
-      9. The address for service for each proprietor of the registered estates to be entered in the register is
+      9. The address(es) for service for each proprietor of the registered estate(s) to be entered in the register is:
     </h2>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
@@ -475,7 +472,7 @@
     </tr>
         <tr class="govuk-table__row" class="govuk-!-width-one-third">
       <th scope="row" class="govuk-table__header govuk-!-width-one-third">Lender</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">National Westminster Bank PLC</td>
+      <td class="govuk-table__cell govuk-!-width-one-third">Anytown Bank PLC</td>
       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
     </tr>
        
@@ -579,12 +576,12 @@
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Name</th>
-      <td class="govuk-table__cell">National Westminster Bank PLC</td>
+      <td class="govuk-table__cell">Anytown Bank PLC</td>
        <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
     </tr>
     <tr class="govuk-table__row"  >
-      <th align="left" valign="top" style="padding:10px 0px 0px 0px" class="govuk-!-width-one-third">Address</th>
-      <td govuk-!-width-one-third" style="padding:10px 0px 0px 0px" >MD1265T</td>
+      <th align="left" valign="top" style="padding:10px 0px 0px 0px" class="govuk-!-width-one-third">Represented by</th>
+      <td govuk-!-width-one-third" style="padding:10px 0px 0px 0px" >10. High Street</br>Anytown</br>Anyshire</br>SO2 2HS</br></td>
        <td govuk-!-width-one-third">&nbsp;</td>
     </tr>
         <tr class="govuk-table__row">
@@ -720,19 +717,14 @@
     ]
   ]
 }) }}
-<details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      Warning statement
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    WARNING</br>
+
+
+    <h2 class="govuk-heading-s">Warning statement</h2>
 <p>If you dishonestly enter information or make a statement that you know is, or might be, untrue or misleading, and intend by doing so to make a gain for yourself or another person, or to cause loss or the risk of loss to another person, you may commit the offence of fraud under section 1 of the Fraud Act 2006, the maximum penalty for which is 10 years’ imprisonment or an unlimited fine, or both.</p>
 <p>Failure to complete this form with proper care may result in a loss of protection under the Land Registration Act 2002 if, as a result, a mistake is made in the register.</p>
 <p>Under section 66 of the Land Registration Act 2002 most documents (including this form) kept by the registrar relating to an application to the registrar or referred to in the register are open to public inspection and copying.  If you believe a document contains prejudicial information, you may apply for that part of the document to be made exempt using Form EX1, under rule 136 of the Land Registration Rules 2003.</p>
-  </div>
-</details>
+
+
 </div>
   
 </div>
