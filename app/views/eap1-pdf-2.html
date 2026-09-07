@@ -1,17 +1,16 @@
-{% extends "layouts/main.html" %}
-
-
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
 
 {% set pageName = "e-AP1" %}
 
 {% block pageTitle %}
-{{ pageName}} – {{ serviceName }} – GOV.UK Prototype Kit
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block content %}
-
-
+<h1 class="govuk-heading-xl" style="color: #cccccc">This document is for research purposes only and
+does not relate to a real application</h1>
 <h2 class="govuk-heading-l">{{pageName}}</h2>
+
 
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
@@ -59,48 +58,25 @@
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row" class="govuk-!-width-one-third">
       <th scope="row" class="govuk-table__header govuk-!-width-one-third">Transaction</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">Transfer</td>
+      <th class="govuk-table__cell govuk-!-width-one-third">Title number</td>
       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
     </tr>
         <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Title number</th>
-      <td style="padding:10px 0px 0px 0px" >SY123456</td>
+      <td class="govuk-table__cell">Transfer</td>
+      <td class="govuk-table__cell">SY123456</td>
+      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
     </tr>
-         <tr class="govuk-table__row">
-        <td class="govuk-table__cell">&nbsp;</td>
-          <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
+            <tr class="govuk-table__row">
+      <td class="govuk-table__cell" >Charge</th>
+      <td class="govuk-table__cell" >AY234567</td>
+      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
     </tr>
-    <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Transaction</th>
-      <td class="govuk-table__cell">Charge</td>
-      <td class="govuk-table__cell">&nbsp;</td>
-    </tr>  
-      <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Title number</th>
-      <td style="padding:10px 0px 0px 0px" >AY234567</td>
+
+                <tr class="govuk-table__row">
+      <td class="govuk-table__cell" >Restriction</th>
+      <td class="govuk-table__cell" >AB345678</td>
+    <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
     </tr>
-         <tr class="govuk-table__row">
-        <td class="govuk-table__cell">&nbsp;</td>
-          <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-    </tr>
-           <tr class="govuk-table__row">
-      
-          <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Transaction</th>
-      <td class="govuk-table__cell">Restriction</td>
-      <td class="govuk-table__cell">&nbsp;</td>
-       
-    </tr>
-           <tr class="govuk-table__row">
-      
-          <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Title number</th>
-      <td class="govuk-table__cell">AB345678</td>
-      <td class="govuk-table__cell">&nbsp;</td>
-       
-    </tr>
-       
- 
   </tbody>
 </table>
 </div>
@@ -134,64 +110,28 @@
 
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Transaction</th>
-      <td class="govuk-table__cell">Transfer</td>
-      <td class="govuk-table__cell">&nbsp;</td>
+      <th scope="col" class="govuk-table__header govuk-!-width-one-third">Transaction</th>
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Price paid / Value</th>
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Fee</th>
        
     </tr>
     <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Price paid / Value</th>
+      <td class="govuk-table__cell">Transfer</th>
       <td class="govuk-table__cell">£80,000</td>
-      <td class="govuk-table__cell">&nbsp;</td>
+      <td class="govuk-table__cell">£20</td>
     </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Fee</th>
-      <td style="padding:10px 0px 0px 0px" >£20</td>
-    </tr> 
      <tr class="govuk-table__row">
-        <td class="govuk-table__cell">&nbsp;</td>
-          <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
+    <td class="govuk-table__cell">Charge</td>
+    <td class="govuk-table__cell">£0</td>
+    <td class="govuk-table__cell">£0</td>
     </tr>
-    <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Transaction</th>
-      <td class="govuk-table__cell">Charge</td>
-      <td class="govuk-table__cell">&nbsp;</td>
-       
+
+         <tr class="govuk-table__row">
+    <td class="govuk-table__cell">Restriction</td>
+    <td class="govuk-table__cell">£0</td>
+    <td class="govuk-table__cell">£0</td>
     </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Price paid / Value</th>
-      <td class="govuk-table__cell">Zero</td>
-      <td class="govuk-table__cell">&nbsp;</td>
-      
-    </tr>
-    
-    
- <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Fee</th>
-      <td style="padding:10px 0px 0px 0px" >Zero</td>
-    </tr> 
-             <tr class="govuk-table__row">
-        <td class="govuk-table__cell">&nbsp;</td>
-          <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-    </tr>
-       <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Transaction</th>
-      <td class="govuk-table__cell">Restriction</td>
-      <td class="govuk-table__cell">&nbsp;</td>
-       
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Price paid / Value</th>
-      <td class="govuk-table__cell">Zero</td>
-      <td class="govuk-table__cell">&nbsp;</td>
-    </tr>
-    
- <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Fee</th>
-      <td style="padding:10px 0px 0px 0px" >Zero</td>
-    </tr> 
+
              <tr class="govuk-table__row">
         <td class="govuk-table__cell">&nbsp;</td>
           <td class="govuk-table__cell">&nbsp;</td>
@@ -200,14 +140,14 @@
    <!-- we recommend using 'Zero' where there is no charge, and not to use a £ with Zero -->
    
           <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Total fees</th>
-      <td class="govuk-table__cell">£20</td>
       <td class="govuk-table__cell">&nbsp;</td>
+      <td class="govuk-table__cell">£20</td>
        
     </tr>
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header">Fee payment method</th>
-      <td class="govuk-table__cell">Direct Debit</td>
       <td class="govuk-table__cell">&nbsp;</td>
+      <td class="govuk-table__cell">Direct Debit</td>
     </tr>
       
   </tbody>
@@ -231,51 +171,26 @@
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row" class="govuk-!-width-one-third">
       <th scope="row" class="govuk-table__header govuk-!-width-one-third">Application attachment</th>
-      <td class="govuk-table__cell govuk-!-one-third">TR1 Registered title(s): whole transfer</td>
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Certified copy statement</th>
       <td class="govuk-table__cell">&nbsp;</td>
       
-    </tr>
-        <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Certified copy statement</th>
-      <td style="padding:10px 0px 0px 0px" >Certified</td>
-    </tr>
-         <tr class="govuk-table__row">
+    <tr class="govuk-table__row">
+        <td class="govuk-table__cell">	TR1 Registered title(s): whole transfer</td>
+        <td class="govuk-table__cell">Certified</td>
         <td class="govuk-table__cell">&nbsp;</td>
-          <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
     </tr>
-
-        <tr class="govuk-table__row" class="govuk-!-width-one-third">
-      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Application attachment</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">Mortgage deed</td>
-      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-        <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Certified copy statement</th>
-      <td style="padding:10px 0px 0px 0px" >Certified</td>
-    </tr>
-         <tr class="govuk-table__row">
+       
+    <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Mortgage deed</td>
+        <td class="govuk-table__cell">Certified</td>
         <td class="govuk-table__cell">&nbsp;</td>
-          <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-    </tr>
-
-           <tr class="govuk-table__row">
-      
-          <th scope="col" class="govuk-table__header govuk-!-width-one-third">Application attachment</th>
-      <td class="govuk-table__cell">Stamp Duty Land Tax</td>
-      <td class="govuk-table__cell">&nbsp;</td>
-       
-    </tr>
-           <tr class="govuk-table__row">
-      
-          <th scope="col" class="govuk-table__header govuk-!-width-one-third"">Certified copy statement</th>
-      <td class="govuk-table__cell">Certified</td>
-      <td class="govuk-table__cell">&nbsp;</td>
-       
-    </tr>
-       
- 
+    </tr>   
+           
+    <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Stamp Duty Land Tax</td>
+        <td class="govuk-table__cell">Certified</td>
+        <td class="govuk-table__cell">&nbsp;</td>
+    </tr>     
   </tbody>
 </table>
 
@@ -302,35 +217,21 @@
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header govuk-!-width-one-third">Applicant type</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">Private individual</td>  
-      <td class="govuk-table__cell">&nbsp;</td>     
+      <th class="govuk-table__cell govuk-!-width-one-third">Applicant details</th>  
+      <td class="govuk-table__cell">&nbsp;</td>    
     </tr>
         <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Application details</th>
-      <td style="padding:10px 0px 0px 0px" >Janet Smith</td>
-    </tr>
-         <tr class="govuk-table__row">
-        <td class="govuk-table__cell">&nbsp;</td>
-          <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-    </tr>
-
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Applicant type</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">Private individual</td>    
-      <td class="govuk-table__cell">&nbsp;</td>   
+      <td class="govuk-table__cell">Private individual</td>
+      <td class="govuk-table__cell">Janet Smith</td>
+       <td class="govuk-table__cell">&nbsp;</td>  
     </tr>
 
             <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Application details</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">Joseph Smith</td>
-      <td class="govuk-table__cell">&nbsp;</td> 
+      <td class="govuk-table__cell">Private individual</td>
+      <td class="govuk-table__cell">Joseph Smith</td>
+       <td class="govuk-table__cell">&nbsp;</td>  
     </tr>
 
-
-
-       
- 
   </tbody>
 </table>
 </div>
@@ -401,7 +302,7 @@
 
    <div class="govuk-summary-card__content">
 
-<p>Not applicable</p>
+<p>They are to hold the property on trust for themselves as joint tenants</p>
 </div>
   
 </div>
@@ -409,7 +310,7 @@
 <div class="govuk-summary-card">
   <div class="govuk-summary-card__title-wrapper">
     <h2 class="govuk-summary-card__title">
-      9. The address for service for each proprietor of the registered estates to be entered in the register is
+      9. The address(es) for service for each proprietor of the registered estate(s) to be entered in the register is:
     </h2>
   </div>
   {% from "govuk/components/table/macro.njk" import govukTable %}
@@ -422,29 +323,21 @@
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <th scope="row" class="govuk-table__header govuk-!-width-one-third">Name</th>
-      <td class="govuk-table__cell govuk-!-width-two-thirds">Janet Smith</td>      
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Address</th>
+      <td class="govuk-table__cell">&nbsp;</td>   
     </tr>
         <tr class="govuk-table__row">
-      <th scope="row" align="left" style="padding:10px 0px 0px 0px">Address</th>
-      <td style="padding:10px 0px 0px 0px" >1 Anyold Street</br>Anytown</br>Anyshire</br>AA1 2BB</td>
-    </tr>
-         <tr class="govuk-table__row">
-        <td class="govuk-table__cell">&nbsp;</td>
-          <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-    </tr>
-
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Name</th>
-      <td class="govuk-table__cell govuk-!-width-two-thirds">Joseph Smith</td>
-            <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>  
+      <td class="govuk-table__cell">Janet Smith</th>
+      <td class="govuk-table__cell" style="padding:10px 0px 10px 0px" >1 Anyold Street</br>Anytown</br>Anyshire</br>AA1 2BB</td>
+      <td class="govuk-table__cell">&nbsp;</td>
     </tr>
 
             <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Address</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">1 Anyold Street</br>Anytown</br>Anyshire</br>AA1 2BB</td>
-      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+      <td class="govuk-table__cell">Joseph Smith</th>
+      <td class="govuk-table__cell" style="padding:10px 0px 10px 0px" >1 Anyold Street</br>Anytown</br>Anyshire</br>AA1 2BB</td>
+      <td class="govuk-table__cell">&nbsp;</td>
     </tr>
+
   </tbody>
 </table>
 </div>
@@ -478,7 +371,7 @@
     </tr>
         <tr class="govuk-table__row" class="govuk-!-width-one-third">
       <th scope="row" class="govuk-table__header govuk-!-width-one-third">Lender</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">National Westminster Bank PLC</td>
+      <td class="govuk-table__cell govuk-!-width-one-third">The Bank PLC</td>
       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
     </tr>
        
@@ -537,98 +430,32 @@
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row" class="govuk-!-width-one-third">
       <th scope="row" class="govuk-table__header govuk-!-width-one-third">Role</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">Transferee</td>
-      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Name</th>
+      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Represented by</th>
     </tr>
+
     <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Name</th>
-      <td class="govuk-table__cell">Janet Smith</td>
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th align="left" valign="top" style="padding:10px 0px 0px 0px" govuk-!-width-one-third">Represented by</th>
-      <td  govuk-!-width-one-third" style="padding:10px 0px 0px 0px">	Fred Smith Solicitors</br>33 Avenue Road</br>Anytown</br>Anyshire</br>SO1 2HB</br><strong>Reference:</strong></br> SHO/2771525/JXKVAXJ09</td>
-       <td  govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-        <tr class="govuk-table__row">
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-        <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-        <tr class="govuk-table__row" class="govuk-!-width-one-third">
-      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Role</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">Transferee</td>
-      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Name</th>
-      <td class="govuk-table__cell">Joseph Smith</td>
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th align="left" valign="top" style="padding:10px 0px 0px 0px" govuk-!-width-one-third">Represented by</th>
-      <td  govuk-!-width-one-third" style="padding:10px 0px 0px 0px">	Fred Smith Solicitors</br>33 Avenue Road</br>Anytown</br>Anyshire</br>SO1 2HB</br><strong>Reference:</strong></br> SHO/2771525/JXKVAXJ09</td>
-       <td  govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-        <tr class="govuk-table__row">
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-        <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-       <tr class="govuk-table__row" class="govuk-!-width-one-third">
-      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Role</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">Lender</td>
-      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Name</th>
-      <td class="govuk-table__cell">National Westminster Bank PLC</td>
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-    <tr class="govuk-table__row"  >
-      <th align="left" valign="top" style="padding:10px 0px 0px 0px" class="govuk-!-width-one-third">Address</th>
+     <td class="govuk-table__cell govuk-!-width-one-third">Transferee</td>
+     <td class="govuk-table__cell govuk-!-width-one-third">Janet Smith</td>
     <td class="govuk-table__cell govuk-!-width-one-third" style="padding:10px 0px 10px 0px">	Fred Smith Solicitors</br>33 Avenue Road</br>Anytown</br>Anyshire</br>SO1 2HB</br><strong>Reference:</strong></br> SHO/2771525/JXKVAXJ09</td>
-       <td govuk-!-width-one-third">&nbsp;</td>
     </tr>
+
+    <tr class="govuk-table__row">
+     <td class="govuk-table__cell govuk-!-width-one-third">Transferee</td>
+     <td class="govuk-table__cell govuk-!-width-one-third">Joseph Smith</td>
+    <td class="govuk-table__cell govuk-!-width-one-third" style="padding:10px 0px 10px 0px">	Fred Smith Solicitors</br>33 Avenue Road</br>Anytown</br>Anyshire</br>SO1 2HB</br><strong>Reference:</strong></br> SHO/2771525/JXKVAXJ09</td>
+    </tr>
+
         <tr class="govuk-table__row">
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-        <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+     <td class="govuk-table__cell govuk-!-width-one-third">Lender</td>
+     <td class="govuk-table__cell govuk-!-width-one-third">	The Bank PLC</td>
+    <td class="govuk-table__cell govuk-!-width-one-third" style="padding:10px 0px 10px 0px">	Fred Smith Solicitors</br>33 Avenue Road</br>Anytown</br>Anyshire</br>SO1 2HB</td>
     </tr>
-           <tr class="govuk-table__row" class="govuk-!-width-one-third">
-      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Role</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">Conveyancer</td>
-      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Name</th>
-      <td class="govuk-table__cell">Fred Smith</td>
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-    <tr class="govuk-table__row"  >
-      <th align="left" valign="top" style="padding:10px 0px 0px 0px" class="govuk-!-width-one-third">Address</th>
-      <td govuk-!-width-one-third" style="padding:10px 0px 0px 0px" >	Fred Smith Solicitors</br>33 Avenue Road</br>Anytown</br>Anyshire</br>SO1 2HB</td>
-       <td govuk-!-width-one-third">&nbsp;</td>
-    </tr>
+
         <tr class="govuk-table__row">
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-        <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-    <tr class="govuk-table__row" class="govuk-!-width-one-third">
-      <th scope="row" class="govuk-table__header govuk-!-width-one-third">Role</th>
-      <td class="govuk-table__cell govuk-!-width-one-third">Transferor</td>
-      <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Name</th>
-      <td class="govuk-table__cell">Joe Jones</td>
-       <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">Represented by</th>
-      <td class="govuk-table__cell">Jones Legal Ltd</br>99 High Street</br>Anytown</br>AT56 1ST</td>
-        <td class="govuk-table__cell govuk-!-width-one-third">&nbsp;</td>
+     <td class="govuk-table__cell govuk-!-width-one-third">Transferor</td>
+     <td class="govuk-table__cell govuk-!-width-one-third">Joe Jones</td>
+    <td class="govuk-table__cell govuk-!-width-one-third" style="padding:10px 0px 10px 0px">Jones Legal Ltd</br>99 High Street</br>Anytown</br>Anyshire</br>AT56 1ST</td>
     </tr>
  
   </tbody>
@@ -723,19 +550,11 @@
     ]
   ]
 }) }}
-<details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      Warning statement
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    WARNING</br>
+    <h2 class="govuk-heading-s">Warning statement</h2>
 <p>If you dishonestly enter information or make a statement that you know is, or might be, untrue or misleading, and intend by doing so to make a gain for yourself or another person, or to cause loss or the risk of loss to another person, you may commit the offence of fraud under section 1 of the Fraud Act 2006, the maximum penalty for which is 10 years’ imprisonment or an unlimited fine, or both.</p>
 <p>Failure to complete this form with proper care may result in a loss of protection under the Land Registration Act 2002 if, as a result, a mistake is made in the register.</p>
 <p>Under section 66 of the Land Registration Act 2002 most documents (including this form) kept by the registrar relating to an application to the registrar or referred to in the register are open to public inspection and copying.  If you believe a document contains prejudicial information, you may apply for that part of the document to be made exempt using Form EX1, under rule 136 of the Land Registration Rules 2003.</p>
-  </div>
-</details>
+
 </div>
   
 </div>
